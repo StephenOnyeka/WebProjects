@@ -1,0 +1,50 @@
+/* .Swiper{
+
+} */
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+#MySwiper {
+  background: #eee;
+  height: 200%;
+  position: relative;
+}
+@media(max-width: 960px){
+  #MySwiper {
+     width: 200%;
+  slidesPerView: 1;
+ 
+}
+}
+#sliding {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+#sliding .imagery {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
