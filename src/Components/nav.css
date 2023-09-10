@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Tektur&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #36454f;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav .title {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-family: "Petit Formal Script", script;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  cursor: pointer;
+  display: block;
+  color: mediumorchid;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+nav li a:hover {
+  transition: 0.6s;
+  color: orchid;
+  font-size: 1.2rem;
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu i {
+  height: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  nav .menu {
+    display: block;
+    border: 2px solid#36454f;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+    justify-items: right;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  nav ul.open {
+    display: flex;
+    transition: 0.8s;
+  }
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
