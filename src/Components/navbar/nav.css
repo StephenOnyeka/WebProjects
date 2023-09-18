@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+#navlink {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #292929; */
+  background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),transparent;
+  /* font-family: 'Lato', sans-serif; */
+  position: fixed;
+  z-index: 999;
+  height: 100px;
+  width: 100%;
+}
+
+#navlink .title {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem;
+  font-family: "Shrikhand", cursive;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#coll_menu{
+  color: white;
+  font-weight: 700;
+  font-size: 0.91rem;
+  float: left;
+  margin-right: 350px;
+}
+#navlink ul {
+  display: flex;
+}
+#navlink ul li {
+  list-style: none;
+}
+#navlink ul li a {
+  cursor: pointer;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  /* padding: 0.5rem;
+  margin: 0 0.5rem; */
+}
+
+/* nav li a:hover {
+  transition: 0.6s;
+  font-size: 1.1rem;
+} */
+#navlink .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+#navlink .menu i {
+  height: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  #navlink .menu {
+    display: block;
+    border: 2px solid#36454f;
+    color: white;
+  }
+
+  .fas{
+    color: white;
+  }
+
+  #navlink .title{
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  #navlink {
+    flex-direction: column;
+    align-items: start;
+    justify-items: right;
+    position: fixed;
+    z-index: 999;
+    height: 70px;
+    width: 100%;
+  }
+
+  #navlink ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #navlink ul.open {
+    display: flex;
+    transition: 0.8s;
+  }
+  #navlink li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #navlink ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
