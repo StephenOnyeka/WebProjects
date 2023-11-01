@@ -41,6 +41,27 @@ function Contact() {
         <h2> SEND ME AN E-MAIL</h2>
         <h4> I AM VERY RESPONSIVE TO MESSAGES</h4>
         <form
+          id="contactform"
+          action="https://formsubmit.io/send/8f9c9628-578e-4ed6-a002-1a5eabc67917"
+          method="POST"
+        >
+          <div className="contact_content">
+            <input type="text" placeholder="Name" name="from_name" required />
+            <input type="email" placeholder="Email" name="email" required />
+            <input type="text" placeholder="Subject" id="subject" required />
+            <textarea
+              type="message"
+              placeholder="Message"
+              name="comment"
+              required
+            />
+
+            <button type="submit" id="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+        {/* <form
           // className={state? error('Not submitted, check your internet connection') : alert('Submitted successfully')}
            ref={form}
           onSubmit={sendEmail, display} 
@@ -77,7 +98,7 @@ function Contact() {
               Send Message
             </button>
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
   );

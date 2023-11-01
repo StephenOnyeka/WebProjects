@@ -17,13 +17,13 @@ div {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
-  width: 10px;
+::-webkit-scrollbar {
+  width: 8px;
   transform-style: flat;
 }
-::-webkit-scrollbar-thumb{
-  width: 30px;
-  background: linear-gradient(grey,purple, mediumorchid, orchid);
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: linear-gradient(grey, purple, mediumorchid, orchid);
   border-radius: 100vw;
 }
 
@@ -65,13 +65,13 @@ div {
   bottom: 80px;
   left: 350px;
 }
-.circle.five{
+.circle.five {
   width: 150px;
   height: 150px;
   top: 500px;
   left: 70px;
 }
-.circle.six{
+.circle.six {
   width: 80px;
   height: 80px;
   top: 400px;
@@ -90,12 +90,12 @@ div {
   margin-top: 100px;
   font-size: 100%;
 }
-  #home_content span>p{
-    color: mediumorchid;
-    font-weight: bolder;
-    font-family: "Petit Formal Script", script;
-    font-size: 2rem;
-  }
+#home_content span > p {
+  color: mediumorchid;
+  font-weight: bolder;
+  font-family: "Petit Formal Script", script;
+  font-size: 2.5rem;
+}
 
 #home_content h2 {
   font-family: pattaya;
@@ -106,7 +106,7 @@ div {
 }
 
 @media screen {
-  #home_container .home-img img{
+  #home_container .home-img img {
     position: relative;
     margin: 0px auto;
     width: 100%;
@@ -148,7 +148,6 @@ div {
 }
 } */
 
-
 .typewriter_container {
   text-align: left;
   color: Purple;
@@ -163,12 +162,11 @@ div {
 #About img {
   width: 600px;
 }
-@media screen{
+@media screen {
   #About img {
     margin: auto;
     width: 100%;
-
-}
+  }
 }
 #about_container {
   margin: 0;
@@ -187,7 +185,6 @@ div {
 #about_content {
   font-size: 120%;
 }
-
 
 #about_content button {
   display: inline-block;
@@ -286,8 +283,8 @@ div {
 #whyme_icon {
   color: mediumorchid;
 }
-@media(max-width: 650px){
-  .description{
+@media (max-width: 650px) {
+  .description {
     width: 300px;
     margin-bottom: 2rem;
   }
@@ -304,7 +301,6 @@ div {
   padding-bottom: 5%;
   padding-left: 20%; */
 }
-
 
 .swiper-slide {
   text-align: center;
@@ -326,7 +322,7 @@ div {
 }
 
 @media screen {
-  .swiper-slide .messages_content{
+  .swiper-slide .messages_content {
     padding: 0px;
     margin: auto;
     padding: 0px auto;
@@ -462,8 +458,8 @@ textarea {
   transition: 0.4s ease;
 }
 
-@media (max-width: 956px){
-  #footer{
+@media (max-width: 956px) {
+  #footer {
     margin: auto;
     height: 150px;
     display: grid;
@@ -472,25 +468,23 @@ textarea {
     align-items: center;
   }
 
-  #footer ul{
-    display: flex;  
+  #footer ul {
+    display: flex;
     flex-direction: row;
     flex-basis: auto;
   }
 
-  #footer p{
+  #footer p {
     font-size: 1rem;
   }
 
-  #footer ul li a{
+  #footer ul li a {
     padding: 0.5rem;
     margin: 0px auto;
     display: block;
     font-size: 0.7rem;
   }
-
 }
-
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: mediumorchid;
